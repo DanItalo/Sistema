@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="E:\ProjetoAjudadeChamadosLBCA\index.css">
+		<title>Formulário</title>
+	</head>
+<body>
+	<div class="container">
+		<h1>Suporte de chamados internos</h1>
+		<div class="row form-group">
+
+			<div class="col-2">
+				<label>Nome de usuário</label>
+				<input type="text" name="NomeUsuario" id="NomeUsuario" class="form-control" placeholder="Exe: tony.stark">
+			</div>
+
+			<div class="row form-group checkprioridade">
+				<div class="col-12">
+					<label>Qual a prioridade de urgência do chamado?</label><br>
+						<input type="checkbox" name="st_prioridadeBaixa" id="st_prioridade">
+					<label class="check" style="color: #808080;">Baixa</label>
+						<input type="checkbox" name="st_prioridadeMedia" id="st_prioridade">
+					<label class="check" style="color: #1E90FF;">Média</label>
+						<input type="checkbox" name="st_prioridadeAlta" id="st_prioridade">
+					<label class="check" style="color: #FF0000;">Alta</label>
+				</div>
+			</div>
+
+				<div class="Ticket">
+					<label>Ticket do chamado</label>
+					<input type="text" name="Ticket" id="Ticket" class="form-control" placeholder="Ticket#">
+				</div>
+
+				<div class="row form-group checkcomplexidade">
+					<div class="col-12">
+						<label>Qual a complexidade?</label><br>
+							<input type="checkbox" name="st_complexidadeBaixa" id="st_complexidade">
+						<label class="check1" style="color: #808080;">Baixa</label>
+							<input type="checkbox" name="st_complexidadeMédia" id="st_complexidade">
+						<label class="check1" style="color: #1E90FF;">Média</label>
+							<input type="checkbox" name="st_complexidadeAlta" id="st_complexidade">
+						<label class="check1" style="color: #FF0000;">Alta</label>
+					</div>
+				</div>
+
+				<div class="col-9">
+					<label>Observação</label>
+					<textarea class="form-control" name="st_obs" id="st_obs" placeholder="Descreva seu problema..."></textarea>
+				</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="form-group">
+			<div class="button">
+				<button id="btn_cadastro" type="button" class="btn btn-success" onchange="validaCadastro()">Cadastrar</button>
+			</div>
+		</div>
+	</div> 
+
+	<script src="E:\ProjetoAjudadeChamadosLBCA\travaCadastro.js"></script>
+</body>
+</html>
