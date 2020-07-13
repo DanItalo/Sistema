@@ -1,24 +1,21 @@
 
 	function validaCadastro(){
-		let validaNome = document.querySelector('#NomeUsuario');
-		let validaPrioridade = document.querySelector('#st_prioridadeChamado');
-		let validaComplexidade = document.querySelector('#st_prioridadeChamado');
-		let validaTicket = document.querySelector('#Ticket');
-		let validaObs = document.querySelector('#st_obs');
+		let validaNome = document.querySelector('#NomeUsuario').value;
+		let validaPrioridade = document.querySelector('#st_prioridadeChamado').value;
+		let validaComplexidade = document.querySelector('#st_prioridadeChamado').value;
+		let validaTicket = document.querySelector('#Ticket').value;
+		let validaObs = document.querySelector('#st_obs').value;
 
 		if(validaNome == ''){
-			alert('Preencha o campo Nome de usuário');
-			
+			alert('Preencha o campo Nome de usuário');	
 		}
 
-		if(!validaPrioridade.checkead){
-			alert('Selecione a prioridade do chamado');
-			
+		if(!validaPrioridade.checked){
+			alert('Selecione a prioridade do chamado');	
 		}
 
-		if(!validaComplexidade.checkead){
-			alert('Selecione a complexidade do chamado');
-			
+		if(!validaComplexidade.checked){
+			alert('Selecione a complexidade do chamado');	
 		}
 
 		if(validaTicket == ''){
@@ -29,4 +26,4 @@
 			alert('Descreva o problema no campo observação');
 		}
 
-}
+	}
