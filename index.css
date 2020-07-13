@@ -1,0 +1,46 @@
+
+body{
+	background-image: url(lbca.png);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: #8A113D;
+ 	padding: 5%;
+ 	padding-top: 20%;
+ 	padding-left: 4%;
+	font: italic bold 50px arial, sans-serif;
+}
+
+div.Ticket{
+	padding-left: 78px;
+}
+
+div.checkprioridade{
+	padding-left: 60px;
+}
+
+div.checkcomplexidade{
+	padding-left: 250px;
+}
+
+button.btn{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+
+}
+
+
+label.check{
+	padding-left: 1%;
+	padding-right: 10%;
+}
+
+label.check1{
+	padding-left: 2px;
+	padding-right: 33px;
+
+}
